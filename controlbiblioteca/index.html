@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b70">
+  <title>Control De Biblioteca</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">
+      <span class="ce">EB</span>
+      <div>
+        <span class="ue">UNIDAD EDUCATIVA</span>
+        <h1>Eduardo Abaroa B</h1>
+        <p>Control Biblioteca</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <p class="label">PANEL DEMOSTRATIVO</p>
+    <h2 class="bienvenido">¡Bienvenido!</h2>
+    <p class="sub">Consulta libros y prueba el control de préstamos. Los cambios son temporales y no se guardan.</p>
+    <section class="stats">
+      <div class="stat"><span>📚</span><b id="totalLibros">8</b><small>Libros</small></div>
+      <div class="stat"><span>✅</span><b id="totalPrestados">3</b><small>Prestados (demo)</small></div>
+      <div class="stat"><span>📖</span><b id="totalCat">5</b><small>Categorías</small></div>
+    </section>
+    <p class="label mt">DIRECTORIO</p>
+    <h3>Libros de ejemplo</h3>
+    <div class="filtros">
+      <div class="search-box"><span>🔍</span><input id="buscar" type="search" placeholder="Buscar por título o autor"></div>
+      <select id="filtroCat"><option value="todos">Todas las categorías</option></select>
+    </div>
+    <div id="lista" class="lista"></div>
+    <p id="vacio" hidden>No hay libros que coincidan</p>
+  </main>
+  <footer>Control Biblioteca - Eduardo Abaroa B</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
